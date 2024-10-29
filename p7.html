@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vespres del Primer Miracle</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #D15826; /* Fondo naranja */
+            color: white; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .poster-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #964828; /* Fondo marrón oscuro */
+            width: 90%;
+            max-width: 500px; /* Ancho máximo */
+            position: relative; /* Para colocar triángulos con pseudo-elementos */
+            border-radius: 10px;
+            transition: background-color 0.4s ease, transform 0.3s ease;
+        }
+
+        .poster-container:hover {
+            background-color: #b1532e; /* Fondo marrón más claro al pasar el ratón */
+            transform: scale(1.03) rotate(-1deg); /* Ligera ampliación y rotación */
+        }
+
+        h1, h2, p, .date {
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+
+        .poster-container:hover h1, 
+        .poster-container:hover h2, 
+        .poster-container:hover p, 
+        .poster-container:hover .date {
+            font-size: 110%; /* Aumenta un 10% al pasar el ratón */
+            color: #ffd700; /* Cambia el color a dorado */
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .line-small {
+            font-size: 14px;
+        }
+
+        .line-medium {
+            font-size: 16px;
+        }
+
+        .line-large {
+            font-size: 18px;
+        }
+
+        .date {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.4s ease; /* Transición para el movimiento */
+        }
+
+        /* Movimiento de la fecha al pasar el ratón */
+        .poster-container:hover .date {
+            transform: translateY(-10px); /* Mueve hacia arriba 10px */
+        }
+
+        /* Triángulo inferior */
+        .poster-container::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #964828; /* Color del triángulo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster-container">
+        <h1>VESPRES DEL PRIMER MIRACLE DE LA CORDOVESA</h1>
+        <h2>EX-VOT PENJAT D'UN MUR DE LA SEUA CELLA PER UN NOVICI DE SANT JERONI DE CATOLBA</h2>
+        <p>
+            <span class="line-large">Acabament de benaurades mans,</span> <br>
+            <span class="line-medium">les mans, les mans dintre de l'aigua a rams,</span><br>
+            <span class="line-small">dintre del vent, oficiant vitralls,</span><br>
+            <span class="line-large">oficiant, més dolces, un amor.</span><br><br>
+
+            <span class="line-medium">Oh mans, oh rams que salpassava l'aire,</span><br>
+            <span class="line-small">l'aire d'amor i pregona ventura,</span><br>
+            <span class="line-medium">el vaixell blanc dintre el migdia d'or,</span><br>
+            <span class="line-large">oh mans, oh rams, oh anell de l'aigua móbil.</span><br><br>
+
+            <span class="line-small">Et veig el cos, oh duresa llunyana,</span><br>
+            <span class="line-medium">com un castell, baladres i terrassa,</span><br>
+            <span class="line-large">que dóna al riu, bel.ligerant panolla.</span><br><br>
+
+            <span class="line-medium">De l'alfals ve una secreta música,</span><br>
+            <span class="line-small">un secret bé, una segona ofrena,</span><br>
+            <span class="line-large">com t'he pensat estesa al llit blanquíssim.</span>
+        </p>
+        <div class="date">2021 <br> 08.06 - 08.08</div>
+    </div>
+
+</body>
+</html>
